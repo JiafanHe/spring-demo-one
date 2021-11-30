@@ -19,6 +19,9 @@
     	
     	<!-- set up constructor injection -->
     	<constructor-arg ref="myFortune" />
+    	
+    	<!-- set up setter injection -->
+    	<property name="fortuneService" ref="myFortune" />
     </bean>
     
     
