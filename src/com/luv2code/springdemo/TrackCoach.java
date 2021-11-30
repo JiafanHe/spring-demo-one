@@ -6,12 +6,15 @@ public class TrackCoach implements Coach {
 	
 
 	public TrackCoach(FortuneService fortuneService) {
-		super();
 		this.fortuneService = fortuneService;
 	}
 	
 	public TrackCoach() {
 		
+	}
+	
+	public void setFortuneService(FortuneService fortuneService) {
+		this.fortuneService = fortuneService;
 	}
 
 	@Override
