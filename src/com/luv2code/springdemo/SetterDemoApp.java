@@ -12,6 +12,7 @@ public class SetterDemoApp {
 		
 		//retrieve bean from spring container
 		CricketCoach theCoach = context.getBean("myCricketCoach",CricketCoach.class);
+		//Coach interface doesn't have visibility to additional methods in CricketCoach
 		
 		//call methods on the bean
 		System.out.println(theCoach.getDailyWorkout());
