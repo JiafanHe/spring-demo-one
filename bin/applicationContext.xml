@@ -34,9 +34,8 @@
     	<property name="fortuneService" ref="myFortune" />	
     	
     	<!-- inject literal values -->
-    	<property name="emailAddress" value="thebestcoach@luv2code.com" />  <!-- Will call setEmailAddress(...) -->
-    	<property name="team" value="Sunrisers Hyderabad" />  <!-- Will call setTeam(...) -->
-    	
+    	<property name="emailAddress" value="${foo.email}" />  <!-- Will call setEmailAddress(...) -->
+    	<property name="team" value="${foo.team}" />  <!-- Will call setTeam(...) -->
     	
     	
     </bean>
